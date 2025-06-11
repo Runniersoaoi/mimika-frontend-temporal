@@ -21,7 +21,7 @@ export default function CameraCapture() {
       formData.append("file", blob, "frame.jpg");
 
       try {
-        const res = await fetch("http://localhost:8000/predict/", {
+        const res = await fetch("https://api-mimika.onrender.com/predict3/", {
           method: "POST",
           body: formData,
         });
